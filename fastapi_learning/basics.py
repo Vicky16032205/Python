@@ -57,5 +57,5 @@ class Blog(BaseModel):
     published : Optional[bool]
 
 @app.post('/create')
-def create_blog(blog : Blog):
-    return {'blog' : f"Blog is created with Blog title as {blog.title}"}
+def create_blog(request : Blog):
+    return {'blog' : f"Blog is created with Blog title as {request.title}"}
