@@ -65,3 +65,65 @@ for example ( (0.1 + 0.1 + 0.1) - 0.3) will always give 0.0 but it does not work
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# join and split operations
+
+- join and split operations are used to convert string to list and list to string respectively.
+- for example,
+```
+               chai = ["Adrak", "Masala", "Neembu", "simple"]
+               print(chai.join("-")) # this will join these words present in the list by giving space as a separator.
+```
+- so basically join is used to join the list into a string.
+
+
+```
+               word = "My name is Vicky Kumar Gupta"
+               print(word.split(" "))   # this will split the word into two parts as there are 5 spaces in between them.
+```
+
+- it will print: ['My', 'name', 'is', 'Vicky', 'Kumar', 'Gupta']
+- so basically split is used to split the string into a list.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Splitting problems in python
+
+- In python, if we were working on a directory and wanted to print or use the path of the directory, we would not be able to do so.
+- Why? It is because '/' is a special character in python and the directory path is also having '/' in its path, and this will create the problem.
+- Python interpreter would not understand what we are trying to do.
+- So, we need to use the r'/' to tell the interpreter that we are using a raw string.
+```
+     - r stands for raw.
+     - r is used to tell the interpreter that we are using a raw string so that it will not interpret the special characters.
+```
+
+- for example:
+```
+          chai = "C:\user\pwd\contains" is one path(let's say)
+          so when you will try to print it, will recieve error like:
+                     File "<python-input-18>", line 1
+                     chai = "C:\user\pwd\contains"
+                            ^^^^^^^^^^^^^^^^^^^^^^
+                     SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \uXXXX escape
+                     
+          
+          So to tackle this error we use r"" string format.
+          Syntax is basically same but just add r character in the starting.
+          
+          chai = r"C:\user\pwd\contains"
+          Now if you try to print, it will be printed as it is as written.
+```
+
+we can print the same path without using r'/ ' format.
+```
+          This is done by adding two '\\'
+          chai = "C:\\user\\pwd\\contains"
+          Now this will print same like the (r) was printing.
+          print(chai) will print C:\user\pwd\contains
+```
