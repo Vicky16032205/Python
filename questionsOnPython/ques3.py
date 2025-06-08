@@ -1,5 +1,7 @@
 grade = int(input("Enter your marks here: "))
-
+if grade>100:
+    print("Invalid grade")
+    exit()
 if grade>89 | grade<101:
     marks = "A"
 elif grade>79 | grade<90:
