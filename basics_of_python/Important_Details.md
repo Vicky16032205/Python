@@ -127,3 +127,20 @@ we can print the same path without using r'/ ' format.
           Now this will print same like the (r) was printing.
           print(chai) will print C:\user\pwd\contains
 ```
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Python List Comprehension
+
+- In this section we will check some python operations where wordings or syntax are changed, but the meaning is the same for both.
+- These are some of the syntax asked in interviews.
+for example, Operation for squaring or cubing of number while their initialization can be done in one line.
+```
+          squared_nums = [x**2 for x in range(0,10)]
+          print(squared_nums)
+          this will print [0,1,4,9,16,25,36,49,64,81] #which is square of numbers starting from 0 till 9.
+          
+          In this manner without writing some extra lines, we had achieved our goal of squaring a list containing numbers.
+```
